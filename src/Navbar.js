@@ -5,7 +5,16 @@ import { useGlobalContext } from "./context";
 
 const Navbar = () => {
   const { openSideBar, openSubMenu, closeSubMenu } = useGlobalContext();
-  return <>navbar component</>;
+  return (
+    <nav className="nav">
+      <div className="nav-center">
+        <div className="nav-header">
+          <img src={logo} alt="stripe" />
+        </div>
+        <ul className="nav-links"></ul>
+      </div>
+    </nav>
+  );
 };
 
 export default Navbar;
