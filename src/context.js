@@ -7,5 +7,14 @@ const AppProvider = ({ children }) => {
   const openSideBar = () => {
     setIsSideBarOpen(true);
   };
+  const closeSideBar = () => {
+    setIsSideBarOpen(false);
+  };
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   return <AppContext.Provider>{children}</AppContext.Provider>;
 };
