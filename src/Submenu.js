@@ -5,7 +5,7 @@ const Submenu = () => {
   const { isSubMenuOpen } = useGlobalContext();
   return (
     <aside className={`${isSubMenuOpen ? `submenu show` : `submenu`}`}>
-      submenu component
+      ethan kurniawan
     </aside>
   );
 };
