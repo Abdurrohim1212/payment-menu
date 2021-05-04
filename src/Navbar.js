@@ -7,10 +7,10 @@ const Navbar = () => {
   const { openSideBar, openSubMenu, closeSubMenu } = useGlobalContext();
   const displaySubmenu = e => {
     const page = e.target.textContext;
-    // const temptBtn = e.target.getBoundingClientReact();
-    console.log("waktu");
-    console.log(e.target);
-    openSubMenu();
+    const temptBtn = e.target.getBoundingClientRect();
+    const center = (temptBtn.left + temptBtn.right) / 2;
+    const bottom = temptBtn.bottom - 3;
+    openSubMenu(page, { center, bottom });
   };
   return (
     <nav className="nav">
